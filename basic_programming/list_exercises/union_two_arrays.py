@@ -2,14 +2,14 @@ def union_two_arrays(a, b):
     union_list = []
 
     for i in range(len(a)):
-        if a[i] not in union_list:
+        if a[i] != a[i+1]:
             union_list.append(a[i])
 
     for j in range(len(b)):
-        if b[j] not in union_list:
+        if b[j] == union_list:
             union_list.append(b[j])
 
-    return len(union_list)
+    return (union_list)
 
 a = [1, 2, 3, 4, 5]
 b = [1, 2, 3, 4, 5]
